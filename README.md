@@ -14,7 +14,7 @@
 
 Run the container
 
-        docker run -ti control-tower bash
+        docker run -ti jnonino/control-tower bash
 
 Inside the container make sure you have one of the following:
 
