@@ -3,7 +3,7 @@ LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
 
 # Install required packages
 RUN apt-get update && \
-    apt-get install -y wget python3 python3-pip lsb-release build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3 && \
+    apt-get install -y curl wget python3 python3-pip lsb-release build-essential zlibc zlib1g-dev ruby ruby-dev openssl libxslt1-dev libxml2-dev libssl-dev libreadline7 libreadline-dev libyaml-dev libsqlite3-dev sqlite3 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 
