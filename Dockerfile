@@ -7,11 +7,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
 
-# Install Control Tower
-RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releases/latest/download/control-tower-linux-amd64 && \
-    mv control-tower /usr/local/bin && \
-    chmod +x /usr/local/bin/control-tower
-
 # Install AWS Cli
 RUN pip3 install awscli --upgrade --user
 ENV PATH ~/.local/bin:$PATH	ENV PATH ~/.local/bin:$PATH
@@ -24,3 +19,8 @@ RUN CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     apt-get install -y google-cloud-sdk && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
+    
+# Install Control Tower
+RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releases/latest/download/control-tower-linux-amd64 && \
+    mv control-tower /usr/local/bin && \
+    chmod +x /usr/local/bin/control-tower
