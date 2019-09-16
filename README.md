@@ -20,7 +20,7 @@ AWS:
 
 GCP:
 
-        docker run --tty --interactive --volume <ABSOLUTE_PATH_TO_FOLDER_CONTAINING_GCP_KEY>:/tmp/ --env GOOGLE_APPLICATION_CREDENTIALS=/tmp/<GOOGLE_CREDS_JSON_FILE_NAME>.json jnonino/control-tower bash
+        docker run --tty --interactive --volume $(GCP_KEY_FILE_PATH):/tmp/ --env GOOGLE_APPLICATION_CREDENTIALS=/tmp/$(GCP_KEY_FILE_NAME) jnonino/control-tower bash
 
 After running that command you will prompted to the container environment, you can run the following Control Tower commands:
 
