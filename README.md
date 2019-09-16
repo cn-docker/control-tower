@@ -14,7 +14,13 @@
 
 Run the container
 
+AWS:
+
         docker run --tty --interactive --env AWS_ACCESS_KEY_ID='<YOUR_AWS_ACCESS_KEY>' --env AWS_SECRET_ACCESS_KEY='<YOUR_AWS_SECRET_KEY>' --name control-tower jnonino/control-tower bash
+
+GCP:
+
+        docker run --tty --interactive --env GOOGLE_APPLICATION_CREDENTIALS=<PATH_TO_GOOGLE_CREDS_JSON> --name control-tower jnonino/control-tower bash
 
 After running that command you will prompted to the container environment, you can run the following Control Tower commands:
 
