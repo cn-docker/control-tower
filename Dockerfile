@@ -13,7 +13,7 @@ RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releas
     chmod +x /usr/local/bin/control-tower
 
 # Install AWS Cli
-RUN pip3 install awscli --upgrade --user	RUN pip3 install awscli --upgrade --user
+RUN pip3 install awscli --upgrade --user
 ENV PATH ~/.local/bin:$PATH	ENV PATH ~/.local/bin:$PATH
 
 # Install GCP
