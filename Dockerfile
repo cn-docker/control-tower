@@ -1,5 +1,5 @@
 FROM debian:stable-slim
-LABEL maintainer="Julian Nonino <noninojulian@gmail.com>"
+LABEL maintainer="CN Services <noninojulian@gmail.com>"
 
 # Install required packages
 RUN apt-get update && \
