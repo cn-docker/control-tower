@@ -4,11 +4,11 @@
 [![](hhttps://img.shields.io/docker/build/cnservices/control-tower)](https://hub.docker.com/r/cnservices/control-tower/)
 [![](https://img.shields.io/docker/automated/cnservices/control-tower)](https://hub.docker.com/r/cnservices/control-tower/)
 [![](https://img.shields.io/docker/stars/cnservices/control-tower)](https://hub.docker.com/r/cnservices/control-tower/)
-[![](https://img.shields.io/github/license/cn-cicd/control-tower)](https://github.com/cn-cicd/control-tower)
-[![](https://img.shields.io/github/issues/cn-cicd/control-tower)](https://github.com/cn-cicd/control-tower)
-[![](https://img.shields.io/github/issues-closed/cn-cicd/control-tower)](https://github.com/cn-cicd/control-tower)
-[![](https://img.shields.io/github/languages/code-size/cn-cicd/control-tower)](https://github.com/cn-cicd/control-tower)
-[![](https://img.shields.io/github/repo-size/cn-cicd/control-tower)](https://github.com/cn-cicd/control-tower)
+[![](https://img.shields.io/github/license/cn-docker/control-tower)](https://github.com/cn-docker/control-tower)
+[![](https://img.shields.io/github/issues/cn-docker/control-tower)](https://github.com/cn-docker/control-tower)
+[![](https://img.shields.io/github/issues-closed/cn-docker/control-tower)](https://github.com/cn-docker/control-tower)
+[![](https://img.shields.io/github/languages/code-size/cn-docker/control-tower)](https://github.com/cn-docker/control-tower)
+[![](https://img.shields.io/github/repo-size/cn-docker/control-tower)](https://github.com/cn-docker/control-tower)
 
 ## Control Tower for AWS
 
