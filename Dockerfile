@@ -27,7 +27,7 @@ RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releas
     chmod +x /usr/local/bin/control-tower
 
 # Install CredHub
-ENV CREDHUB_VERSION 2.5.3
+ENV CREDHUB_VERSION 2.8.0
 RUN wget https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/${CREDHUB_VERSION}/credhub-linux-${CREDHUB_VERSION}.tgz && \
     tar -xzvf credhub-linux-${CREDHUB_VERSION}.tgz && \
     rm -rf credhub-linux-${CREDHUB_VERSION}.tgz && \
