@@ -21,7 +21,7 @@ RUN CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
     
 # Install Control Tower
-ENV CT_VERSION 0.16.10
+ENV CT_VERSION 0.16.11
 RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releases/download/${CT_VERSION}/control-tower-linux-amd64 && \
     mv control-tower /usr/local/bin && \
     chmod +x /usr/local/bin/control-tower
