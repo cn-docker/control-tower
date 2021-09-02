@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:buster-slim
 LABEL maintainer="CN Services <noninojulian@gmail.com>"
 
 # Install required packages
