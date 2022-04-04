@@ -21,13 +21,15 @@ RUN CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 
     
 # Install Control Tower
+# renovate: datasource=github-tags depName=EngineerBetter/control-tower
 ENV CT_VERSION 0.19.1
 RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releases/download/${CT_VERSION}/control-tower-linux-amd64 && \
     mv control-tower /usr/local/bin && \
     chmod +x /usr/local/bin/control-tower
 
 # Install CredHub
-ENV CREDHUB_VERSION 2.9.3
+# renovate: datasource=github-releases depName=cloudfoundry/credhub-cli
+ENV CREDHUB_VERSION=2.9.3
 RUN wget https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/${CREDHUB_VERSION}/credhub-linux-${CREDHUB_VERSION}.tgz && \
     tar -xzvf credhub-linux-${CREDHUB_VERSION}.tgz && \
     rm -rf credhub-linux-${CREDHUB_VERSION}.tgz && \
