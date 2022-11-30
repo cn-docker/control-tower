@@ -22,7 +22,7 @@ RUN CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     
 # Install Control Tower
 # renovate: datasource=github-tags depName=EngineerBetter/control-tower
-ENV CONTROL_TOWER_VERSION=0.29.0
+ENV CONTROL_TOWER_VERSION=0.30.0
 RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releases/download/${CONTROL_TOWER_VERSION}/control-tower-linux-amd64 && \
     mv control-tower /usr/local/bin && \
     chmod +x /usr/local/bin/control-tower
