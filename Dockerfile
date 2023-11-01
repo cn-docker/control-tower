@@ -29,9 +29,9 @@ RUN wget -O control-tower https://github.com/EngineerBetter/control-tower/releas
 
 # Install CredHub
 # renovate: datasource=github-releases depName=cloudfoundry/credhub-cli
-ENV CREDHUB_VERSION=2.9.20
-RUN wget https://github.com/cloudfoundry-incubator/credhub-cli/releases/download/${CREDHUB_VERSION}/credhub-linux-${CREDHUB_VERSION}.tgz && \
-    tar -xzvf credhub-linux-${CREDHUB_VERSION}.tgz && \
-    rm -rf credhub-linux-${CREDHUB_VERSION}.tgz && \
+ENV CREDHUB_VERSION=2.9.22
+RUN wget https://github.com/cloudfoundry/credhub-cli/releases/download/${CREDHUB_VERSION}/credhub-linux-amd64-${CREDHUB_VERSION}.tgz && \
+    tar -xzvf credhub-linux-amd64-${CREDHUB_VERSION}.tgz && \
+    rm -rf credhub-linux-amd64-${CREDHUB_VERSION}.tgz && \
     mv credhub /usr/local/bin && \
     chmod +x /usr/local/bin/credhub
